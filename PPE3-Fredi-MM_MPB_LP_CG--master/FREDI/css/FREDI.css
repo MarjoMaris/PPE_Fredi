@@ -1,0 +1,132 @@
+@charset "utf-8";
+li.item {
+    text-decoration: black;
+}
+
+h2.menu {
+    text-align: center;
+    
+}
+
+body {
+    height: 100%;
+}
+
+html {
+    height: 100%;
+}
+
+.div-header{
+    text-align: center;
+    box-align: center;
+    display: block;
+    border-collapse: collapse;
+    position: relative;
+    margin: 2px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    place-content: center;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif
+}
+
+.div-logo {    
+    box-align: center;
+}
+
+
+.div-login {
+    display: block;
+    position: center;
+    text-align: center;
+    border: 1.5px outset black;
+    border-collapse: collapse;
+    place-content: center;
+    padding: 1%;
+    margin-top: 5%;
+    margin-bottom: 25%;
+    width: 20%;
+}
+
+.div-register {
+    display: block;
+    position: center;
+    text-align: center;
+    border: 1.5px outset black;
+    border-collapse: collapse;
+    place-content: center;
+    padding: 1%;
+    margin-top: 5%;
+    margin-bottom: 25%;
+    width: 20%;
+    height: 75%;
+}
+
+:required {
+    border: 2px outset black;
+}
+
+.div-radio {
+    display: flex;
+    position: center;
+    place-content: center;
+    padding: 1%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+}
+
+body {   
+    background-color:white;
+    background-position: center;
+    background-size: cover;
+    position: center;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+p,
+label {
+    font: 1rem 'Calibri', sans-serif;
+}
+
+input {
+    margin: .4rem;
+}
+
+
+
+/* -- visualisation des bordures du tableau de l'entête-- */
+
+table, tr, td {
+  border-style: none;
+  border-width: 1px;
+  border-color : black;
+  border-collapse: collapse;
+}
+
+/* -- espacement et alignement dans les cellules de l'entête-- */
+
+tr,td {
+  padding: 5px;
+  text-align: center;
+}
+
+/* -- visualisation des bordures du tableau de listage des questions-- */
+
+table.table-list, tr.tr-list, td.td-list, th.th-list{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+/* -- espacement et alignement dans les cellules de l'entête-- */
+
+tr.tr-list, td.td-list, th.th-list {
+    padding: 5px;
+    text-align: center;
+  }
+
+.frais{
+
+}

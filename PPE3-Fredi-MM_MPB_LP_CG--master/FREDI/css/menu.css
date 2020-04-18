@@ -1,0 +1,186 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+nav{
+    width: 100%;
+    background-color: #3F3C3B; 
+}
+
+nav > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+nav > li {
+    list-style-type: none;
+    padding: 15px 30px 20px 30px;  
+}
+
+nav > ul > li {
+    float: left;
+    position: relative;
+}
+
+nav > ul > li > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.submenu {
+    display: none;
+}
+
+nav input[type=checkbox]{
+    display: none;
+}
+
+nav label{
+    display: none;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li > a{
+    padding: 20px 30px;
+    color :white;
+}
+
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+    color: white;   
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    list-style-type: none;
+    text-align: center;
+    top: 100%;
+    left: 0px;
+    padding: 20px 30px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    z-index: 1000;
+    text-decoration-color: white;
+}
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #303030;
+    width: 270px;
+    text-align: left;
+}
+
+.submenu li{
+    border: 1px outset #303030;
+    color: black;
+}
+
+.submenu li:hover a{
+    color: white;
+    font-weight: bold;
+}
+
+.menu-accueil:hover{ 
+    border-top: 5px outset #303030;
+    background-color: RGBa(75, 74, 74, 0.15); 
+}
+
+.menu-bordereau:hover{ 
+    border-top: 5px outset #303030;
+    background-color: RGBa(75, 74, 74, 0.15); 
+}
+
+.menu-bordereau .submenu{
+    background-color:  #3F3C3B;
+}
+
+.menu-bordereau .submenu li:hover{
+    background-color: RGBa(75, 74, 74, 0.15);
+}
+
+.menu-periode:hover{ 
+    border-top: 5px outset #303030;
+    background-color: RGBa(75, 74, 74, 0.15); 
+}
+
+.menu-periode .submenu{
+    background-color:  #3F3C3B;
+}
+
+.menu-periode .submenu li:hover{
+    background-color: RGBa(75, 74, 74, 0.15);
+}
+
+.menu-questions:hover{ 
+    border-top: 5px outset #303030;
+    background-color: RGBa(75, 74, 74, 0.15); 
+}
+
+.menu-questions .submenu{
+    background-color:  #3F3C3B;
+}
+
+.menu-questions .submenu li:hover{
+    background-color: RGBa(75, 74, 74, 0.15);
+}
+
+.menu-contact:hover{ 
+    border-top: 5px outset #303030;
+    background-color: RGBa(75, 74, 74, 0.15); 
+}
+
+.menu-contact .submenu{
+    background-color:#3F3C3B;
+}
+
+.menu-contact .submenu li:hover{
+    background-color: #3F3C3B;
+}
+
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+
+@media screen and (max-width: 780px){
+    .menu-mobile{
+        display: block;
+        color: #FFF;
+        background-color: RGBa(75, 74, 74, 0.97);
+        text-align: center;
+        padding: 12px 0px;
+    }
+    nav ul {
+        display: none;
+    }
+    nav ul li, nav ul li a{
+        width: 100%;
+        text-align: center;
+    }
+    nav ul li a, nav ul li:hover a{
+        padding: 10px 0px;
+    }
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+    .submenu li a{
+        text-align: center;
+    }
+}
